@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+div {
+  display: block;
+}
+
+h1 {
+  display: block;
+  font-size: 1.3em;
+  margin-block-start: 0.65em;
+  margin-block-end: 0.65em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+li {
+  display: list-item;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+#header {  
+  height: 65px;
+  border-top: 3px solid black;
+  border-bottom: 1px solid #d2d2d2;
+  position: relative;
+  margin: 0 auto;
+}
+
+#header .wrapper1 {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#header h1 a {
+  float: left;  
+}
+
+#header .wrapper1 img{
+  width: 180px;
+  height: 70px;
+  margin-top: -20px;
+}
+
+#header .top {
+  position: relative;
+  float: right;
+  margin-top: 8px;
+  margin-right: -10px;
+  font-size: 18px;
+}
+
+#header .top li:hover .drop {
+  display: block;
+}
+
+#header .top li {
+  float: left;
+  margin-left: 15px;
+  color: black;
+  display: block;
+}
+
+#header .top li a {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+#header .drop {
+  display: none;
+  width: 80px;
+  position: relative;
+  font-size: 8px;
+}
+
+#header .drop li {
+  display: block;
+  width: 130px;
+  position: inherit;
+  background: oldlace;
+  font-size: 14px;
+  text-align: left;
+  margin: auto;
+  padding: 5px;
+}
+
+#header .drop li:hover {
+  background-color: orange;
+  transition: ease 1s;
+}
+
+#contents {  
+  position: relative;
+  width: 1200px;
+  height: 720px;
+  margin: 0 auto;    
+  border-bottom: 1px solid #d2d2d2;
+  z-index: 0;
+}
+
+#contents .wrapper1 {
+  position: relative;
+  width: 1200px;
+  height: 40px;
+  font-size: 1.2em;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.wrap1li2{
+	width: 180px
+}
+
+.wrap1li1{
+	width: 100px;
+}
+
+#contents .wrapper2 {
+  position: relative;
+  border: 1px solid #d2d2d2;
+  width: 1200px;
+  height: 600px;
+  margin: auto;
+  overflow: auto;
+  text-align: center;
+}
+
+#contents .wrapper2 iframe{
+	width: 1000px;
+	height: 500px;
+	margin-top: 60px;	
+	overflow: auto;
+}
+
+#contents .wrapper2::after {
+  width: 1200px;
+  height: 600px;
+  content: "";
+  background: url('/project/html/img/school.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.25;
+}
+
+#contents .wrapper3 {
+  width: 1200px;
+  height: 50px;
+  padding: 3px;
+  font-size: 1.2em;
+  margin: 0 auto;
+}
+
+#contents .left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+}
+
+#contents .top {
+  float: right;
+  margin-right: -5px;
+}
+
+#contents .top li {
+  float: right;
+  margin-left: 10px;
+  margin-right: 5px;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;  
+  height: 35px;
+  background-color: #87cefa;
+  text-align: center;
+  line-height: 35px;
+}
+
+#contents .bottom li {
+  float: left;
+  margin-top: 0px;
+  margin-left: -1px;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  width: 250px;
+  height: 35px;
+  background-color: #87cefa;
+  text-align: center;
+  line-height: 35px;
+}
+
+#footer {
+  height: 125px;
+  padding-top: 15px;
+  background: #64666e;
+}
+
+#footer .wrapper4 {
+  width: 1200px;
+  margin: auto;
+}
+
+#footer .wrapper4 img{
+  width: 180px;
+  height: 70px;
+  margin-top: -25px;
+}
+
+#footer .emblem {
+  float: left;
+  margin-top: 15px;
+}
+
+#footer .address {
+  float: left;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #787a81;
+}
+
+#footer .address ul li a {
+  font: bold 14px;
+  color: #ffffff;
+}
+
+#footer .address .add {
+  display: block;
+  margin-top: 3px;
+  font-size: 12px;
+  color: #d2d2d2;
+}
+
+#footer .address .copyright {
+  display: block;
+  margin-top: 3px;
+  font-size: 12px;
+  color: #d2d2d2;
+}
+

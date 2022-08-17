@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AcornAcademy 학사정보시스템</title>
+  <link rel="stylesheet" href="../css/viewScoreinsert.css">
+  <script>
+  function list(){
+		document.frm.method = "get";
+		document.frm.action="/project/listScore2";
+		document.frm.submit();
+	}
+	function find(){
+		document.frm.method ="post";
+		document.frm.action="/project/listStudent.20_3";
+		document.frm.submit();
+	}
+  </script>
+</head>
+
+<body>
+
+	<form name ="frm" method="post" action="/project/insertScore">
+	<table class="tbl">
+	<tr>
+	<td class="td1">점수번호</td>
+	<td class="td2"><input type="text" name="score_num" ></td>
+	</tr>
+	<tr>
+	<td class="td1">학생번호</td>
+	<td class="td2"><input type="text" name="snumber" ></td>
+	</tr>
+	<tr>
+	<td class="td1">국어</td>
+	<td class="td2"><input type="text" name="kor"  placeholder ="숫자만 입력해주세요"></td>
+	</tr>
+	<tr>
+	<td class="td1">영어</td>
+	<td class="td2"><input type="text" name="eng"  placeholder ="숫자만 입력해주세요"></td>
+	</tr>
+	<tr>
+	<td class="td1">수학</td>
+	<td class="td2"><input type="text" name="math" placeholder ="숫자만 입력해주세요"></td>
+	</tr>
+	</table>
+	<button class="btn1">등&nbsp;&nbsp;록</button><button class="btn2" onclick="find();">조회 및 변경</button>
+	</form>
+	<p>조회 및 변경은 <span>score_num</span>이 필수 입니다.</p>
+
+</body>
+
+</html>

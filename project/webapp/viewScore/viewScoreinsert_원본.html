@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function list(){
+	document.frm.method = "get";
+	document.frm.action="/project/listScore2";
+	document.frm.submit();
+}
+function find(){
+	document.frm.method ="post";
+	document.frm.action="/project/listStudent.20_3";
+	document.frm.submit();
+}
+
+</script>
+</head>
+<body>
+
+<form name ="frm" method="post" action="/project/insertScore">
+<table>
+<tr><td>점수번호</td><td><input type="text" name="score_num" ></td></tr>
+<tr><td>학생번호</td><td><input type="text" name="snumber" ></td></tr>
+<tr><td>국어</td><td><input type="text" name="kor"  placeholder ="숫자만 입력해주세요"></td></tr>
+<tr><td>영어</td><td><input type="text" name="eng"  placeholder ="숫자만 입력해주세요"></td></tr>
+<tr><td>수학</td><td><input type="text" name="math" placeholder ="숫자만 입력해주세요"></td></tr>
+</table>
+<button>등록</button><button onclick="find();">조회 및 변경</button>
+</form>
+<p>조회 및 변경은 <span>score_num</span>이 필수 입니다.</p>
+
+</body>
+</html>

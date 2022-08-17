@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcornAcademy 회원가입</title>
+    <head>
+        <link href="../css/signup.css" rel="stylesheet" />
+        <script src="signup.js"></script>
+    
+    </head>
+    
+    <body>
+    <form method="post" action="/project/insertPtable">
+        <div class="wrapper">
+            <div class="title"><h1 style="font-size: 21px;">교수님 회원가입</h1></div>
+            <div class="img">
+                <img src="../html/img/logo.png">
+            </div>
+            <div>
+                <input type="text" placeholder="pnumber를 입력해 주세요." name="pnumber">
+            </div>
+            <div class="email">
+                <input id="email" type="text" placeholder="이메일을 입력해 주세요." name="p_id">
+                <div id="emailError" class="error"></div>
+            </div>
+            <div class="name">
+                <input id="name"  type="text" placeholder="성함을 입력해 주세요." name="p_name">
+                <div id="nameError" class="error"></div>
+            </div>
+            <div class="password">
+                <input id="password" type="password" placeholder="비밀번호를 입력해 주세요." >
+                <div id="passwordError" class="error"></div>
+            </div>
+            <div class="passwordCheck">
+                <input id="passwordCheck" type="password" placeholder="비밀번호를 다시 입력해 주세요." name="p_pw">
+                <div id="passwordCheckError" class="error"></div>
+            </div>
+            <div class="class">
+                <select id="class" name="ban">
+                    <option selected disabled>반을 선택해주세요.</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div class="subject">
+                <select id="subject" name="class">
+                    <option selected disabled>담당과목을 선택해주세요.</option>
+                    <option>국어</option>
+                    <option>수학</option>
+                    <option>영어</option>
+                </select>
+                <div id="areaError" class="error"></div>
+           
+             <div class="gender">
+                <input id="gender_man" type="radio" name="gender">남성  
+                <input id="gender_woman" type="radio" name="gender">여성
+                <div id="genderError" class="error"></div>
+            </div>
+            <div class="line">
+                <hr>
+            </div>
+            <div class="signUp">
+                <button onclick="signUpCheck()">가입하기</button>
+            </div>
+        </div>
+        </form>
+    
+    </body>
+    
+    </html>

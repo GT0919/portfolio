@@ -1,0 +1,65 @@
+http://222.101.203.34:8090/project/html/login.html
+
+
+
+db 생성 
+
+CREATE TABLE  S_info(
+  snumber              NUMBER(10) NOT NULL PRIMARY KEY  ,
+  id          VARCHAR2(25) NOT NULL,
+  pw           VARCHAR2(25)   NOT NULL,
+  name        VARCHAR2(25)  NOT NULL ,
+  birthday           date NOT NULL,
+  ban number(3) not null
+  
+
+  
+);
+COMMIT;
+select * from S_info;
+CREATE TABLE Pro_info(
+  pnumber              NUMBER(3) NOT NULL PRIMARY KEY ,
+  p_id          VARCHAR2(25) NOT NULL,
+  p_pw          VARCHAR2(25)   NOT NULL,
+  p_name        VARCHAR2(25)  NOT NULL ,
+  class           VARCHAR2(25) NOT NULL,
+  ban           NUMBER(2) NOT NULL
+   
+  
+);
+COMMIT;
+
+CREATE TABLE Score_info(
+  score_num NUMBER(10)  NOT NULL  PRIMARY KEy,
+  snumber              NUMBER(10) NOT NULL  ,
+  kor           NUMBER(3)   NOT NULL,
+  eng         NUMBER(3)  NOT NULL ,
+  math           NUMBER(3) NOT NULL,
+  total           NUMBER(3) ,
+  avg             NUMBER(3,1) 
+  
+);
+COMMIT;
+
+
+insert into S_info values (1 , 's1' , '1234', '김두산' , '2001-01-01' , 1);
+insert into S_info values (2 , 's2' , '1234', '오진혁' , '2002-01-01' , 2);
+insert into S_info values (3 , 's3' , '1234', '이상윤' , '2003-01-01' , 3);
+insert into S_info values (4 , 's4' , '1234', '김경태' , '2004-01-01' , 4);
+
+
+insert into Score_info values (1 , 1 , 10,  10,  10, 30, 10);
+insert into Score_info values (2 , 2 , 20,  20,  20, 60, 20);
+insert into Score_info values (3 , 3 , 30,  30,  30, 90, 30);
+insert into Score_info values (4 , 4 , 40,  40,  40, 120, 40);
+
+
+insert into Pro_info values (1 , 'p1' , '1234', '김길동' , '수학' , 1 );
+insert into Pro_info values (2 , 'p2' , '1234', '박길동' , '과학' , 2);
+insert into Pro_info values (3 , 'p3' , '1234', '이길동' , '영어' ,3);
+insert into Pro_info values (4 , 'p4' , '1234', '정길동' , '국어' ,4);
+
+COMMIT;
+
+학생은 6번부터  교수는2번부터
+
